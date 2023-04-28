@@ -1,8 +1,17 @@
 import React from "react";
 import portfolioPic from "../images/Portfolio.jpg";
+import { MdEmail } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Nav() {
+  const linkedinURL = "https://www.linkedin.com/in/janna-fuentes-138242274/";
+  const email = "your-email@example.com"; // replace with your email address
+  const emailSubject = "Regarding professional portfolio"; // customize the email subject as needed
+  const emailBody = "Hello,"; // customize the email body as needed
+  const emailLink = `mailto:${email}?subject=${encodeURIComponent(
+    emailSubject
+  )}&body=${encodeURIComponent(emailBody)}`;
   return (
     <div>
       <div className="media">
@@ -29,7 +38,21 @@ function Nav() {
           <Link to="/Resume">Resume</Link>
         </li>
         <li>
-          <Link to="/Contact">Contact</Link>
+          <Link to="/Contact">
+            <a href={emailLink}>
+              <span className="icon">
+                <MdEmail />
+              </span>
+              Contact
+            </a>
+          </Link>
+        </li>
+        <li>
+          <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
+            <span className="icon">
+              <FaLinkedin />
+            </span>
+          </a>
         </li>
       </ul>
     </div>
