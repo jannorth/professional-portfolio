@@ -1,41 +1,79 @@
-import React from 'react';
-import projectOne from '../images/random-restaurant-generator.jpg';
-import { Colors } from '../colors';
+import React from "react";
+import projectOne from "../images/random-restaurant-generator.jpg";
+import projectTwo from "../images/DevConnect.jpg";
+import projectThree from "../images/weather-app.jpg";
+import Colors from "../colors";
+import "bulma/css/bulma.min.css";
 
 function Project() {
-  const primaryColor = Colors.primaryColor;
-
   return (
-    <div>
-      <h2 className="title">Projects</h2>
-      <div className="card" style={{ backgroundColor: `${primaryColor}` }}>
-        <div className="card-image">
-          <figure className="image">
-            <img src={projectOne} alt="colorful plates" />
-          </figure>
-        </div>
-        <div className="card-content">
-          <h5 className="title is-5">Card title</h5>
-          <p className="subtitle is-6">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <button className="button is-primary" onClick={() => window.location.href = "#"}>Go somewhere</button>
-        </div>
-      </div>
+    <div className={`container ${Colors.primaryColor}`}>
+      <h2 className={`title ${Colors.tertiaryColor}`}>Projects</h2>
       <div className="columns">
         <div className="column">
-          <div className="card">
+          <div className={`card ${Colors.secondaryColor}`}>
             <div className="card-content">
-              <h5 className="title is-5">Special title treatment</h5>
-              <p className="subtitle is-6">With supporting text below as a natural lead-in to additional content.</p>
-              <button className="button is-primary" onClick={() => window.location.href = "#"}>Go somewhere</button>
+              <h5 className="title is-5">Food Finder</h5>
+              <p className={`subtitle is-6 ${Colors.tertiaryColor}`}>
+                A web application that suggests a random restaurant based on the
+                user's location and cuisine preference.
+              </p>
+              <div className="card-image">
+                <img src={projectOne} alt="Food Finder" />
+              </div>
+              <button
+                className={`button is-link ${Colors.tertiaryColor}`}
+                onClick={() =>
+                  (window.location.href =
+                    "https://achogue.github.io/random-restaurant-generator/")
+                }
+              >
+                Try it Out!
+              </button>
             </div>
           </div>
         </div>
         <div className="column">
-          <div className="card">
+          <div className={`card ${Colors.secondaryColor}`}>
             <div className="card-content">
-              <h5 className="title is-5">Special title treatment</h5>
-              <p className="subtitle is-6">With supporting text below as a natural lead-in to additional content.</p>
-              <button className="button is-link" onClick={() => window.location.href = "/About"}>Learn More</button>
+              <h5 className="title is-5">DevConnect</h5>
+              <p className={`subtitle is-6 ${Colors.tertiaryColor}`}>
+                Developing Growth. Remote Listings. Friendly Feedback.
+              </p>
+              <div className="card-image">
+                <img src={projectTwo} alt="DevConnect" />
+              </div>
+              <button
+                className={`button is-link ${Colors.tertiaryColor}`}
+                onClick={() =>
+                  (window.location.href =
+                    "https://github.com/jannorth/DevConnect")
+                }
+              >
+                Try it Out!
+              </button>
+            </div>
+          </div>
+        </div>
+        <div className="column">
+          <div className={`card ${Colors.secondaryColor}`}>
+            <div className="card-content">
+              <h5 className="title is-5">Weather App</h5>
+              <p className={`subtitle is-6 ${Colors.tertiaryColor}`}>
+                A web application that displays the current weather and forecast
+                for a given location.
+              </p>
+              <div className="card-image">
+                <img src={projectThree} alt="Weather App" />
+              </div>
+              <button
+                className={`button is-link ${Colors.tertiaryColor}`}
+                onClick={() =>
+                  (window.location.href = "https://jannorth.github.io/weather-app/")
+                }
+              >
+                Try it Out!
+              </button>
             </div>
           </div>
         </div>

@@ -3,18 +3,19 @@ import portfolioPic from "../images/Portfolio.jpg";
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Colors from "../colors";
+import "bulma/css/bulma.min.css";
 
 function Nav() {
   const linkedinURL = "https://www.linkedin.com/in/janna-fuentes-138242274/";
-  const email = "your-email@example.com"; // replace with your email address
-  const emailSubject = "Regarding professional portfolio"; // customize the email subject as needed
-  const emailBody = "Hello,"; // customize the email body as needed
-  const emailLink = `mailto:${email}?subject=${encodeURIComponent(
-    emailSubject
-  )}&body=${encodeURIComponent(emailBody)}`;
+  const email = "";
+  const emailSubject = "Regarding your portfolio";
+const emailLink = `mailto:${email}?subject=${encodeURIComponent(
+  emailSubject
+)}`;
   return (
-    <div>
-      <div className="media">
+    <div style={{ color: Colors.secondaryColor, backgroundColor: Colors.primaryColor }}>
+    <div className="media">
         <div className="media-left">
           <figure className="image is-48x48">
             <img src={portfolioPic} alt="Janna" />
@@ -22,7 +23,7 @@ function Nav() {
         </div>
       </div>
       <div className="media-content">
-        <p className="title is-4">Janna Fuentes</p>
+        <p style={{ color: Colors.tertiaryColor, backgroundColor: Colors.primaryColor }} className="title is-4">Janna Fuentes</p>
         <p className="subtitle is-6">
           <a href="https://github.com/jannorth">@jannorth</a>
         </p>
@@ -38,14 +39,12 @@ function Nav() {
           <Link to="/Resume">Resume</Link>
         </li>
         <li>
-          <Link to="/Contact">
             <a href={emailLink}>
               <span className="icon">
                 <MdEmail />
               </span>
               Contact
             </a>
-          </Link>
         </li>
         <li>
           <a href={linkedinURL} target="_blank" rel="noopener noreferrer">

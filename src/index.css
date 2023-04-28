@@ -1,4 +1,21 @@
 
+.title, .subtitle {
+  color: #fff; /* tertiaryColor */
+}
+
+.card {
+  background-color: #363636; /* primaryColor */
+}
+
+.card-image img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.button.is-link {
+  color: #fff; /* tertiaryColor */
+  background-color: #363636; /* primaryColor */
+}
 
 title {
   display: hidden;

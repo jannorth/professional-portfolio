@@ -1,13 +1,14 @@
 import React from 'react';
-
+import Colors from '../colors';
+import "bulma/css/bulma.min.css";
 
 function Footer(){
     return (
-        <div>
-            <h2>This is the Footer Page</h2>
+        <div style={{color: Colors.tertiaryColor, backgroundColor: Colors.primaryColor}}>
+            <h2> Thanks for visiting! </h2>
 
 
         </div>
     )
 }
-export default Footer
+export default Footer;

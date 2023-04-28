@@ -1,11 +1,17 @@
-export const primaryColor = "#C2D6C6";
-export const secondaryColor = "#474A48";
-export const tertiaryColor = "#2C302E";
-export const quaternaryColor = "#909590";
+// midnight green
+export const primaryColor = "#003844";
+// dutch white
+export const secondaryColor = "#FFEBC6";
+// selective yellow
+export const tertiaryColor = "#FFB100";
+// rose pompadore
+export const quaternaryColor = "#EF81A7";
 
-export const Colors = {
+const Colors = {
   primaryColor,
   secondaryColor,
   tertiaryColor,
   quaternaryColor,
 };
+
+export default Colors;
