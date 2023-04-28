@@ -1,12 +1,15 @@
 import React from 'react';
 import Nav from './Nav';
+import "bulma/css/bulma.min.css";
 
 function Header(){
     return (
         <div>
-            <h2>Janna Fuentes</h2>
-            <Nav></Nav>
+            <div className='$card-background-color'>
 
+                    
+                <Nav></Nav>
+            </div>
         </div>
     )
 }
