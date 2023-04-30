@@ -1,11 +1,17 @@
-export const primaryColor = "#C2D6C6";
-export const secondaryColor = "#474A48";
-export const tertiaryColor = "#2C302E";
-export const quaternaryColor = "#909590";
+// battleship gray
+export const primaryColor = "#909590";
+// jet
+export const secondaryColor = "#2C302E";
+// ash gray
+export const tertiaryColor = "#C2D6C6";
+// outer space
+export const quaternaryColor = "#474A48";
 
-export const Colors = {
+const Colors = {
   primaryColor,
   secondaryColor,
   tertiaryColor,
   quaternaryColor,
 };
+
+export default Colors;

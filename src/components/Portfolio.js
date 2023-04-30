@@ -1,13 +1,15 @@
 import React from 'react';
 import Project from './Project';
+// import Colors from '../colors';
+import "bulma/css/bulma.min.css";
 
-function Portfolio(){
+
+function Portfolio({ backgroundImage }){
     return (
-        <div>
-            <h2>This is the Portfolio Page</h2>
+        <div style={ backgroundImage }>
             <Project></Project>
 
         </div>
     )
 }
-export default Portfolio
+export default Portfolio;
