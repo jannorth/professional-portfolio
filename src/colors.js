@@ -1,11 +1,11 @@
-// midnight green
-export const primaryColor = "#003844";
-// dutch white
-export const secondaryColor = "#FFEBC6";
-// selective yellow
-export const tertiaryColor = "#FFB100";
-// rose pompadore
-export const quaternaryColor = "#EF81A7";
+// battleship gray
+export const primaryColor = "#909590";
+// jet
+export const secondaryColor = "#2C302E";
+// ash gray
+export const tertiaryColor = "#C2D6C6";
+// outer space
+export const quaternaryColor = "#474A48";
 
 const Colors = {
   primaryColor,

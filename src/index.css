@@ -1,10 +1,10 @@
-
+/* 
 .title, .subtitle {
-  color: #fff; /* tertiaryColor */
+  color: #FFB100;
 }
 
 .card {
-  background-color: #363636; /* primaryColor */
+  background-color: #003844;
 }
 
 .card-image img {
@@ -13,8 +13,8 @@
 }
 
 .button.is-link {
-  color: #fff; /* tertiaryColor */
-  background-color: #363636; /* primaryColor */
+  color: #FFB100;
+  background-color: #EF81A7;
 }
 
 title {
@@ -34,3 +34,4 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+ */
