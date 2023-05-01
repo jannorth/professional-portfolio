@@ -14,32 +14,26 @@ function Project({ backgroundImage }) {
       <div className="container">
         <div className="columns">
           <div className="column">
-            <div className="card-image" style={backgroundImage}>
-              <img src={projectOne} alt="Food Finder" />
-            </div>
-            <div
-              className="card-content is-flex is-justify-content-center"
-              style={backgroundImage}
-            >
-              <div className="position-relative">
-                <div className="position-absolute top-50 start-50 translate-middle has-text-centered has-text-grey-lighter">
-                  <p className="subtitle is-7">
-                    A web application that suggests a random restaurant based on
-                    the user's location and cuisine preference.
-                  </p>
-                  <button
-                    className="button is-link"
-                    onClick={() =>
-                      (window.location.href =
-                        "https://achogue.github.io/random-restaurant-generator/")
-                    }
-                  >
-                    Food Finder
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
+  <div className="card-image" style={backgroundImage}>
+    <img src={projectOne} alt="Food Finder" />
+  </div>
+  <div className="card-content is-flex is-justify-content-center" style={backgroundImage}>
+    <div className="position-relative">
+      <div className="position-absolute top-50 start-50 translate-middle has-text-centered has-text-grey-lighter">
+        <p className="subtitle is-7">
+          A web application that suggests a random restaurant based on the user's location and cuisine preference.
+        </p>
+        <button className="button is-link" onClick={() => (window.location.href = "https://achogue.github.io/random-restaurant-generator/")}>
+          Food Finder
+        </button>
+        <br />
+        <button className="button is-link" onClick={() => (window.location.href = "https://github.com/achogue/random-restaurant-generator")}>
+          Github Repository
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
           <div className="column">
             <div className="card-image" style={ backgroundImage }>
               <img src={projectTwo} alt="DevConnect" />

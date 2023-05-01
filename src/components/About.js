@@ -13,8 +13,6 @@ function About({ backgroundImage }) {
             religion, and ultimately pursued a path to a degree in music. After
             college, I was a teacher, then a birth doula. Now, I'm excited about
             expanding my learning with coding. Thanks for visiting!
-            <br />
-            <time dateTime="2016-1-1"></time>
           </div>
         </div>
       </div>
