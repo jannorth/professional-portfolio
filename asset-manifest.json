@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/professional-portfolio/static/css/main.15ec6c60.css",
+    "main.js": "/professional-portfolio/static/js/main.587dc904.js",
+    "static/js/787.1ed0c42c.chunk.js": "/professional-portfolio/static/js/787.1ed0c42c.chunk.js",
+    "static/media/weather-app.jpg": "/professional-portfolio/static/media/weather-app.0640358eac357b248665.jpg",
+    "static/media/random-restaurant-generator.jpg": "/professional-portfolio/static/media/random-restaurant-generator.279494c4225adcb74ee1.jpg",
+    "static/media/Portfolio.jpg": "/professional-portfolio/static/media/Portfolio.79c607aeeb40b4db081a.jpg",
+    "static/media/DevConnect.jpg": "/professional-portfolio/static/media/DevConnect.48ed0148991072cf690c.jpg",
+    "static/media/README tutorial.png": "/professional-portfolio/static/media/README tutorial.a5aaa0b03af517041896.png",
+    "static/media/scheduler.png": "/professional-portfolio/static/media/scheduler.361da493ab9f01ee5546.png",
+    "static/media/Resume.pdf": "/professional-portfolio/static/media/Resume.8e0842b806d80a9dd10a.pdf",
+    "static/media/password generator.png": "/professional-portfolio/static/media/password generator.d527cffb5ec6030f00b7.png",
+    "index.html": "/professional-portfolio/index.html",
+    "main.15ec6c60.css.map": "/professional-portfolio/static/css/main.15ec6c60.css.map",
+    "main.587dc904.js.map": "/professional-portfolio/static/js/main.587dc904.js.map",
+    "787.1ed0c42c.chunk.js.map": "/professional-portfolio/static/js/787.1ed0c42c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15ec6c60.css",
+    "static/js/main.587dc904.js"
+  ]
+}
