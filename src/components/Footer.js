@@ -1,8 +1,8 @@
 import React from "react";
 import { MdEmail } from "react-icons/md";
-// import Colors from "../colors";
 import "bulma/css/bulma.min.css";
 import { FaLinkedin } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 function Footer({ backgroundImage }) {
   const email = "";
@@ -15,24 +15,32 @@ function Footer({ backgroundImage }) {
 
   return (
     <div style={backgroundImage}>
-      <h2> Thanks for visiting! </h2>
-      <ul>
-        <li>
-          <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
-            <span className="icon">
-              <FaLinkedin />
-            </span>
-          </a>
-        </li>
-        <li>
-          <a href={emailLink}>
-            <span className="icon" onClick={(e) => e.stopPropagation()}>
-              <MdEmail />
-            </span>
-          </a>
-        </li>
-      </ul>
+      <h2>Thanks for visiting!</h2>
+      <div className="level">
+        <ul className="level-item has-text-centered">
+          <li>
+            <a href="https://github.com/jannorth">
+              <FaGithub size={16} />
+            </a>
+          </li>
+          <li>
+            <a href={linkedinURL} target="_blank" rel="noopener noreferrer">
+              <span className="icon">
+                <FaLinkedin />
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href={emailLink}>
+              <span className="icon" onClick={(e) => e.stopPropagation()}>
+                <MdEmail />
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
+
 export default Footer;
